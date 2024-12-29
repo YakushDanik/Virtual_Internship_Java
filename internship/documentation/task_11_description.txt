@@ -1,0 +1,1 @@
+Сделал конструкторы и get/set методы в классе TravelCalculatePremiumResponse
