@@ -1,0 +1,10 @@
+В папке build/generated лежат две папки headers и annotationProcessor. Предположу при сборке проекта происходит
+разметка данных и дальнейшая их конфигурация
+
+В папке build/libs лежит jar-ник
+
+в build/reports лежит js код, index.html, .css
+
+в build/tmp лежит compileJava и compileTestJava, а также manifest.mf  папке jar
+
+

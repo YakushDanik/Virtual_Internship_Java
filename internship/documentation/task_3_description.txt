@@ -1,0 +1,3 @@
+Билдить Gradle можно через терминал
+./gradlew build
+./gradlew :my_project:build

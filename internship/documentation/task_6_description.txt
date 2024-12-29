@@ -1,0 +1,4 @@
+Для удаление папки build надо воспользоваться командой clean у Gradle
+Также можно вызвать через терминал:
+./gradlew clean
+./gradlew :internship:clean
