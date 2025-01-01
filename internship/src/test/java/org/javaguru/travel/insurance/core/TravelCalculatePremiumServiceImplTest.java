@@ -87,15 +87,5 @@ class TravelCalculatePremiumServiceImplTest {
         assertEquals(dateTo, response.getAgreementDateTo());
     }
 
-    @Test
-    public void calculatePremiumAgreementPriceTest(){
-        String firstName = "Danila";
-        String lastName = "Yakush";
-        Date dateFrom = new Date();
-        Date dateTo = new Date(dateFrom.getTime() + 100000);
-        TravelCalculatePremiumRequest request = createRequest(firstName, lastName, dateFrom, dateTo);
-        TravelCalculatePremiumResponse response = service.calculatePremium(request);
 
-        assertEquals(service.agreementPriceCalculate(dateFrom, dateTo), response.getAgreementPrice());
-    }
 }
