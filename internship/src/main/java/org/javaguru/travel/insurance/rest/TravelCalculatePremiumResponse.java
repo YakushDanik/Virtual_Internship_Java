@@ -1,5 +1,7 @@
 package org.javaguru.travel.insurance.rest;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Date;
 
 public class TravelCalculatePremiumResponse {
@@ -11,10 +13,13 @@ public class TravelCalculatePremiumResponse {
         this.agreementDateFrom = agreementDateFrom;
         this.agreementDateTo = agreementDateTo;
     }
+
     private String personFirstName;
     private String personLastName;
     private Date agreementDateFrom;
     private Date agreementDateTo;
+    private BigDecimal agreementPrice;
+
 
     public String getPersonFirstName() {
         return personFirstName;
@@ -30,6 +35,10 @@ public class TravelCalculatePremiumResponse {
 
     public Date getAgreementDateTo() {
         return agreementDateTo;
+    }
+
+    public BigDecimal getAgreementPrice() {
+        return agreementPrice;
     }
 
     public void setPersonFirstName(String personFirstName) {
@@ -48,4 +57,7 @@ public class TravelCalculatePremiumResponse {
         this.agreementDateTo = agreementDateTo;
     }
 
+    public void setAgreementPrice(BigDecimal agreementPrice) {
+        this.agreementPrice = agreementPrice;
+    }
 }
