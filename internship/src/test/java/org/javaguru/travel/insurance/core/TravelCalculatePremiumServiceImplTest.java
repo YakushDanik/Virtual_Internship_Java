@@ -13,10 +13,12 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 class TravelCalculatePremiumServiceImplTest {
 
     private TravelCalculatePremiumServiceImpl service;
+    DateTimeService dateTimeService;
 
     @BeforeEach
     public void setUp() {
-        service = new TravelCalculatePremiumServiceImpl();
+        dateTimeService = new DateTimeService();
+        service = new TravelCalculatePremiumServiceImpl(dateTimeService);
     }
 
     private TravelCalculatePremiumRequest createRequest(String firstName, String lastName, Date dateFrom, Date dateTo) {
